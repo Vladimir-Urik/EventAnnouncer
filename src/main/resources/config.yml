@@ -1,0 +1,15 @@
+# If you need support, join our discord server: https://discord.gg/2aaExp3xsM
+
+permissions:
+  announce: "eventannouncer.event"
+
+messages:
+  announce:
+    - "&a&lEVENT ANNOUNCEMENT"
+    - "&7"
+    - "  &fThe event starts soon! Join and get nice rewards!"
+    - "&7 (Click to join)"
+
+
+# Command after clicking the message
+command: "server event"
