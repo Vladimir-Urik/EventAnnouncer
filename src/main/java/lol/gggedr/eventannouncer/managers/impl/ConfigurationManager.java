@@ -13,9 +13,9 @@ public class ConfigurationManager implements Manager {
     public void onEnable() {
         getPlugin().getDataFolder().mkdirs();
 
-        File EventAnnouncerFile = new File(getPlugin().getDataFolder(), "config.yml");
-        FileUtils.copyFileFromJar(EventAnnouncerFile.getName(), EventAnnouncerFile);
-        eventAnnouncerConfig = FileUtils.loadConfiguration(EventAnnouncerFile);
+        File eventAnnouncerFile = new File(getPlugin().getDataFolder(), "config.yml");
+        FileUtils.copyFileFromJar(eventAnnouncerFile.getName(), eventAnnouncerFile);
+        eventAnnouncerConfig = FileUtils.loadConfiguration(eventAnnouncerFile);
     }
 
     public Configuration getEventAnnouncerConfig() {
