@@ -1,7 +1,7 @@
 apply plugin: 'java'
 
 group = 'lol.gggedr'
-version = '1.0'
+version = '1.1'
 
 repositories {
     mavenCentral()
@@ -17,6 +17,8 @@ repositories {
 
 dependencies {
     compileOnly "io.github.waterfallmc:waterfall-api:1.20-R0.1-SNAPSHOT"
+
+    compileOnly 'net.luckperms:api:5.4'
 }
 
 def targetJavaVersion = 8

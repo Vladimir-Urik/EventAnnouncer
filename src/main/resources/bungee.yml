@@ -2,3 +2,5 @@ name: EventAnnouncer
 version: '${version}'
 main: lol.gggedr.eventannouncer.EventAnnouncer
 author: GGGEDR
+softDepends:
+  - LuckPerms

@@ -1,15 +1,48 @@
 # If you need support, join our discord server: https://discord.gg/2aaExp3xsM
 
 permissions:
-  announce: "eventannouncer.event"
+  announce: "eventannouncer.eventannounce"
 
 messages:
+  usage:
+    - "&cUsage: /eventannounce <name> <seconds>"
+
+  created:
+    - "&aEvent created!"
+
   announce:
+    - ""
     - "&a&lEVENT ANNOUNCEMENT"
     - "&7"
-    - "  &fThe event starts soon! Join and get nice rewards!"
-    - "&7 (Click to join)"
+    - "  &fName: &a%name%"
+    - "  &fEvent leader: &a%leader%" # Since version 1.1 you can use %leader%, %prefix%, %suffix%, %group% and %seconds%.
+    - "  &fThe event starts in &a%seconds%s&f! Join and get nice rewards!"
+    - "&7 (Click to teleport)"
+    - ""
 
+  start-soon:
+    - ""
+    - "&a&lEVENT ANNOUNCEMENT"
+    - "&7"
+    - "  &fName: &a%name%"
+    - "  &fEvent leader: &a%leader%"
+    - "  &fThe event starts in &a%seconds%s&f! Join and get nice rewards!"
+    - "&7 (Click to teleport)"
+    - ""
+
+  start:
+    - ""
+    - "&a&lEVENT ANNOUNCEMENT"
+    - "&7"
+    - "  &fName: &a%name%"
+    - "  &fEvent leader: &a%leader%"
+    - "  &fThe event has started!"
+    - ""
+
+notifications:
+  announce: true
+  start-soon: true
+  start: true
 
 # Command after clicking the message
 command: "server event"

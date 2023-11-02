@@ -21,7 +21,9 @@ public class MessageUtils {
     public static String color(List<String> message, HashMap<String, String> placeholders) {
         String newMessage = Strings.join(message, "\n&r");
         for(String placeholder : placeholders.keySet()) {
-            newMessage = newMessage.replace("%"+ placeholder +"%", placeholders.get(placeholder));
+            String replacement = placeholders.get(placeholder);
+            if(replacement == null) replacement = "";
+            newMessage = newMessage.replace("%"+ placeholder +"%", replacement);
         }
 
         return color(newMessage);
