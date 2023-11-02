@@ -1,1 +1,1 @@
-![Thread](https://i.imgur.com/Y6NsHBQ.png)
+![Thread](https://i.imgur.com/XAxf43o.png)
